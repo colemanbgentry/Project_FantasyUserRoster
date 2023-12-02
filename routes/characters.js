@@ -7,4 +7,10 @@ router.get('/', charaController.getAll);
 
 router.get('/:id', charaController.getSingle);
 
+router.post('/', charaController.createCharacter);
+
+router.put('/:id', charaController.updateCharacter);
+
+router.delete('/:id', charaController.deleteCharacter);
+
 module.exports = router;
