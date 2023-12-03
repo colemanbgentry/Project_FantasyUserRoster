@@ -5,10 +5,9 @@
     "description": "Allows users to find their characters",
     "version": "1.0.0"
   },
-  "host": "https://fantasy-user-roster.onrender.com",
+  "host": "fantasy-user-roster.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http",
     "https"
   ],
   "paths": {
