@@ -52,7 +52,7 @@ const updateCharacter = async (req, res) => {
         characterName: req.body.characterName,
         class: req.body.class,
         level: req.body.level,
-        health: req.body.heatlh,
+        health: req.body.health,
         magicPoints: req.body.magicPoints,
         strength: req.body.strength,
         agility: req.body.agility,
