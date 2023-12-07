@@ -3,14 +3,12 @@ const router = express.Router();
 
 const charaController = require('../controllers/characters');
 
+const { isAuthenticated } = require("../middleware/authenticate");
+
 router.get('/', charaController.getAll);
-
 router.get('/:id', charaController.getSingle);
-
-router.post('/', charaController.createCharacter);
-
-router.put('/:id', charaController.updateCharacter);
-
-router.delete('/:id', charaController.deleteCharacter);
+router.post('/', isAuthenticated, charaController.createCharacter);
+router.put('/:id', isAuthenticated, charaController.updateCharacter);
+router.delete('/:id', isAuthenticated, charaController.deleteCharacter);
 
 module.exports = router;
