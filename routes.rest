@@ -16,7 +16,7 @@ POST http://localhost:3000/users HTTP/1.1
 Content-Type: application/json
 
 {
-    "username" : "adventurer101",
+    "username" : "adventurer102",
     "email"    : "adventurer101@example.com",
     "hashedPassword" : "hashed_password_for_user101",
     "characters" : [""]
@@ -28,8 +28,8 @@ Content-Type: application/json
 
 {
     "characterId": 4,
-    "characterName": "Brad",
-    "class": "Bard",
+    "characterName": "Brada",
+    "class": "Robot",
     "level": 1,
     "health": 100,
     "magicPoints": 100,
